@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it" class="htmx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="htmx-config" content='{"defaultSwapStyle":"outerHTML"}'>
+    <title>Bookmarks_Hub</title>
+    <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+    <style>
+        /* Stile generale per i div che vengono visualizzati al passaggio del mouse */
+h1,h2,h3,h4,h5,li,p,details {
+    text-align: center;
+    font-size: x-large;
+}
+
+/* Nascondi inizialmente i div all'interno delle sezioni */
+.bookmark-section {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per i link all'interno dei div visualizzati al passaggio del mouse */
+.bookmark-section  {
+  display: block;
+  margin: 5px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Effetto di hover sui link all'interno dei div visualizzati al passaggio del mouse */
+ div a:hover {
+  text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="bookmark-section">
+        <h1>SICUREZZA</h1>
+        <div hx-boost="true">
+            <ul>
+                <li><a href="https://haveibeenpwned.com/">POWNING</a></li>
+                <li><a href="https://www.hotsheet.com/inoitsu/">Email_breach</a></li>
+                <li><a href="https://monitor.firefox.com/scan">Firefox_Monitor</a></li>
+                <li><a href="https://nuclearleaks.com/">Breached_DB</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bookmark-section">
+        <h2>UFFICIO</h2>
+        <div hx-boost="true">
+            <ul>
+                <li><a href="">I_love_PDF</a></li>
+                <li><a href="">Google_Drive</a></li>
+                <li><a href="">Zoho</a></li>
+				<li><a href="">One_drive</a></li>
+				<li><a href="https://products.aspose.app/cells/it/viewer">Aspose</a></li>
+				<li><a href="https://www.onlyoffice.com/it/developer-edition.aspx">Only_office</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bookmark-section">
+        <h3>PROGRAMMAZIONE</h3>
+        <div hx-boost="true">
+            <ul>
+            <li><a href="https://hexed.it/">HEXEDITOR</a></li>
+            <li><a href="https://vscode.dev/">Visual_Studio_Code_IDE</a></li>
+			<li><a href="https://lnx.marcocastiglione.it/joomla/esercizi/category/23-programmazione">Esercizi</a></li>
+			<p>WebDesign</p>
+			<details>
+            <li><a href="https://en.wikiversity.org/wiki/Web_Design/HTML_Challenges">Web_Design</a></li>
+            <li><a href="https://smartybro.com/2019/09/01/the-practical-web-development-course-100-challenges/">SmartyBro</a></li>
+            <li><a href="https://blog.bitsrc.io/40-html-css-projects-for-beginner-2021-5bd01ff62361">Medium</a></li>
+            <li><a href="https://www.w3resource.com/php-exercises/">w3resources</a></li>
+			<li><a href="https://htmx.org/docs/#installing">Webdesign:htmx framework</a></li>
+			 <li><a href="https://css-challenges.com/">CSS_Challenges</a></li>
+            <li><a href="https://www.frontendmentor.io/challenges">Front_End_Mentor</a></li>
+			<li><a href="https://www.w3resource.com/php-exercises/">W3resources:php</a></li>
+        </ul>
+		</details>
+		<p>Java</p>
+		<details>
+		   <ul>
+		   <li><a href= "https://coderanch.com/c/build-tools">Java_Forums</a></li>
+		   </ul>
+		 <p>RETROPROGRAMMAZIONE</p>
+		 <ul>
+		 <li><a href="">CBM PRG STUDIO PRO</a></li>
+		 <li><a href)"http://www.devili.iki.fi/Computers/Commodore/C64/Programmers_Reference/page_iii.html">Commodore reference</a></li>
+		 </ul>
+        </div>
+    </div>
+
+    <div class="bookmark-section">
+        <h4>SOCIAL</h4>
+        <div hx-boost="true">
+            <ul>
+            <li><a href="https://www.youtube.com/watch?v=WiB43An355A&ab_channel=overVolt&themeRefresh=1">Youtube</a></li>
+            <li><a href="https://www.crunchyroll.com/it/watch/G4VUQM0NM/all-hands-on-deck-class-1-a">Chruncy_Roll</a></li>
+            <li><a href="https://mangaplus.shueisha.co.jp/updates">Manga_Plus</a></li>
+			<li><a href="https://www.animesaturn.tv/anime/Boku-no-Hero-Academia-6">Anime_soul</a></li>
+			<li><a href="https://www.animetok.it/anime/boku-no-hero-academia-6/">AnimeTok</a></li>
+            <p>LAVORO</p>
+			<details>
+			  <ul>
+				<li><a href="https://www.concorsando.it/blog/concorsi-a-milano/">Concorsando</a></li>
+				<li><a href ="https://it.indeed.com/jobs?">Indeed</a></li>
+				<li<a href="https://inrecruiting.intervieweb.it/access.php?sess=cookie&LAC=Inrecruitingsmart">Inrecruiting</a></li>
+			  </ul>
+			</details>
+		</ul>
+		<h5>AUDIO E VIDEO</h5>
+		    <ul>
+			  <li><a href= "https://wiki.videolan.org/Media_resource_locator/">VLC</a></li>
+			</ul>
+        </div>
+    </div>
+</body>
+</html>
